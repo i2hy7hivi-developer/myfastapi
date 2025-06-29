@@ -7,14 +7,7 @@ from app.models.user import User
 from app.utils.hash import verify_password
 from app.utils.jwt import create_access_token
 from datetime import timedelta
-
-# Dependency to get DB session
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+from app.database.connection import get_db
 
 router = APIRouter(prefix="/auth", tags=["Auth"])
 

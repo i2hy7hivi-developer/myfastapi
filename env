@@ -1,0 +1,9 @@
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=myfastapi
+DB_USER=root
+DB_PASSWORD=
+
+# Generated using following command:
+# python -c "import secrets; print(secrets.token_hex(32))"
+SECRET_KEY=9baa6bd163a2e7aec69874666a74d60d111c4ca0d83509f19237e4e3cc932d25
